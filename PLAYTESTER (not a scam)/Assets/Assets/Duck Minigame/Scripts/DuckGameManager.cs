@@ -82,8 +82,8 @@ public class DuckGameManager : MonoBehaviour
         AnalogGlitchEffect = GameObject.Find("Main Camera").GetComponent<AnalogGlitch>();
 
         // SFX
-        audioSources = GetComponents<AudioSource>();
-        audioSources[0].clip = normalSFX;
+        //audioSources = GetComponents<AudioSource>();
+        //audioSources[0].clip = normalSFX;
 //      failureSFX = GetComponent<AudioSource>();
  //     failureSFX.clip = failureClipSFX;
 
