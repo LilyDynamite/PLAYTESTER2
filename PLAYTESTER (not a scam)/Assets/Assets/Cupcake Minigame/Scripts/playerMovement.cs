@@ -86,7 +86,7 @@ public class playerMovement : MonoBehaviour
                     if (isReady == true && readyTime >= 0.0F) //ding 
                     {
                    
-                    sfxDrop.Play();
+                    //sfxDrop.Play();
                         //have isReady state true
                         readyTime -= Time.deltaTime;
                         //TODO: SFX FOR DING

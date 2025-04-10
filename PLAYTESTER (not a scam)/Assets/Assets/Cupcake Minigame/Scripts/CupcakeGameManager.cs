@@ -109,8 +109,8 @@ public class CupcakeGameManager : MonoBehaviour
         //sfx oven ticks
         ovenAudioSource.mute = true;
         droneAudioSource.mute = true;
-        ovenAudioSource.loop = true;
-        droneAudioSource.loop = true;
+        //ovenAudioSource.loop = true;
+        //droneAudioSource.loop = true;
 
 
 
@@ -348,16 +348,16 @@ public class CupcakeGameManager : MonoBehaviour
             if (anim.GetBool("isReady") && !sfxIsDing)
             {
                 //ding!
-                ovenAudioSource.clip = sfxOvenTicks[0];
-                ovenAudioSource.Play();
+                //ovenAudioSource.clip = sfxOvenTicks[0];
+                ovenAudioSource.PlayOneShot(sfxOvenTicks[0]);
                 sfxIsDing = true;
                 sfxIsOvertime = false;
             }
             else if (anim.GetBool("isReloading") && sfxIsDing)
             {
                 //tick tick to fill
-                ovenAudioSource.clip = sfxOvenTicks[1];
-                ovenAudioSource.Play();
+                //ovenAudioSource.clip = sfxOvenTicks[1];
+                ovenAudioSource.PlayOneShot(sfxOvenTicks[1]);
                 sfxIsDing = false;
                 sfxIsOvertime = false;
             }
