@@ -9344,7 +9344,7 @@ Transform:
   m_GameObject: {fileID: 781392082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.06, y: 36.039, z: 0}
-  m_LocalScale: {x: 5.75, y: 5.93969, z: 1}
+  m_LocalScale: {x: 5.85, y: 5.93969, z: 1}
   m_Children: []
   m_Father: {fileID: 1386187746}
   m_RootOrder: 1
@@ -12096,7 +12096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc40184528b778c48a66479db104e644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameDuration: 1
+  gameDuration: 40
   scoreText: {fileID: 320443653}
   scorePoints: 0
   timerText: {fileID: 1894740861}
@@ -19201,7 +19201,7 @@ MonoBehaviour:
   scoreText: {fileID: 137213159}
   gameOver: 0
   UIController: {fileID: 0}
-  gameDuration: 10
+  gameDuration: 40
   timerText: {fileID: 1029863823}
   glitchFreq: 0
   isGlitch: 0
@@ -23536,7 +23536,7 @@ MonoBehaviour:
   UIController: {fileID: 0}
   glitchFreq: 0
   glitchWaitTime: 1
-  gameDur: 10
+  gameDur: 40
   isGlitch: 0
   randomValue: 0
   GlitchEffect: {fileID: 519420030}

@@ -63,7 +63,7 @@ public class SpawnManagerFast : MonoBehaviour
     IEnumerator SpawnDuck(Transform spawnPoint, int index)
     {
 
-        GameObject newDuck = Instantiate(duckPrefab, new Vector3(spawnPoint.position.x, spawnPoint.position.y, -2), Quaternion.identity);
+        GameObject newDuck = Instantiate(duckPrefab, new Vector3(spawnPoint.position.x, spawnPoint.position.y-0.28f, -2), Quaternion.identity);
         yield return new WaitForSeconds(showInterval);
         Destroy(newDuck);
         blockedIndexes.Remove(index);
@@ -71,7 +71,7 @@ public class SpawnManagerFast : MonoBehaviour
 
     IEnumerator SpawnTrash(Transform spawnPoint, int index)
     {
-        GameObject newTrash = Instantiate(trashPrefab, new Vector3(spawnPoint.position.x, spawnPoint.position.y, -2), Quaternion.identity);
+        GameObject newTrash = Instantiate(trashPrefab, new Vector3(spawnPoint.position.x, spawnPoint.position.y-0.13f, -2), Quaternion.identity);
         yield return new WaitForSeconds(showInterval);
         Destroy(newTrash);
         blockedIndexes.Remove(index);
